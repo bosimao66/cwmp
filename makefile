@@ -23,7 +23,9 @@ SRCDIRS					:= acs \
 						   cpe \
 						   acs/cmdline \
 						   cpe/cmdline \
-						   interface/memmg
+						   interface/memmg \
+						   interface/log \
+						   interface/cmdline 
 
 #区分 acs和 cpe文件目录（注意不要有空格！！！！！）
 ACS_DIR_NAME			:=acs
