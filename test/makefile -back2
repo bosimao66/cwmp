@@ -1,7 +1,8 @@
 ﻿
 
-#注意：COMMON_SRCDIRS 公共目录及其子目录里的.c文件，如果重名，会生成同名.o文件，发生冲突；
-#如果有需要的话，可以优化
+
+#问题：acs和cpe分别编译，它的不同目录，靠acs和cpe区分；如果目录是acs_aa ,也会被识别；所以有待优化
+
 
 #这里编译器为gcc
 
@@ -20,28 +21,28 @@ CPE_TARGET			:= cpe
 #所有的源文件路径
 
 SRCDIRS					:= acs \
-						   cpe \
-						   acs/cmdline \
-						   cpe/cmdline \
-						   interface/memmg
+							acs/cmdline \
+							cpe \
+							cpe/cmdline 
 
-#区分 acs和 cpe文件目录（注意不要有空格！！！！！）
+#区分 acs和 cpe文件目录（注意不要有空格）
 ACS_DIR_NAME			:=acs
 CPE_DIR_NAME			:=cpe
 
 
 # 思路：acs和cpe的代码不完全相同，所以源文件集合分为三个子集ACS_SRCDIRS、CPE_SRCDIRS、COMMON_SRCDIRS
-# 过滤规则……
-ACS_SRCDIRS 			:=
-CPE_SRCDIRS 			:=
-COMMON_SRCDIRS 			:=
-TMP						:=
-
-ACS_SRCDIRS 			:=$(filter $(ACS_DIR_NAME)/%,$(SRCDIRS)) $(filter $(ACS_DIR_NAME),$(SRCDIRS))
-CPE_SRCDIRS 			:=$(filter $(CPE_DIR_NAME)/%,$(SRCDIRS)) $(filter $(CPE_DIR_NAME),$(SRCDIRS))
-TMP			 			:=$(filter-out $(ACS_SRCDIRS),$(SRCDIRS))
-COMMON_SRCDIRS 			:=$(filter-out $(CPE_SRCDIRS),$(TMP))
-
+# 遍历 SRCDIRS 中的每个子项，检查是否包含 $(ACS_DIR_NAME)/ 字符串，如果包含则添加
+ACS_SRCDIRS 			?=
+CPE_SRCDIRS 			?=
+TMP						?=
+COMMON_SRCDIRS 			?=
+$(foreach dir,$(SRCDIRS),$(if $(findstring acs,$(dir)),$(eval ACS_SRCDIRS += $(dir))))	
+$(foreach dir,$(SRCDIRS),$(if $(findstring $(CPE_DIR_NAME),$(dir)),$(eval CPE_SRCDIRS += $(dir))))
+#去除acs前缀的
+$(foreach dir,$(SRCDIRS),$(if $(findstring $(ACS_DIR_NAME),$(dir)),,$(eval TMP += $(dir))))
+#去除cpe前缀前缀的
+$(foreach dir,$(TMP),$(if $(findstring $(CPE_DIR_NAME),$(dir)),,$(eval COMMON_SRCDIRS += $(dir))))
+					   
 					   
 #更多的头文件路径，思路：把所有的源文件路径当做头文件路径，然后加上额外的头文件路径
 
@@ -69,8 +70,8 @@ CPE_OBJ_DIR				:= $(OBJ_DIR)/cpe
 COMMON_OBJ_DIR			:= $(OBJ_DIR)
 
 #目标全名
-ACS_TARGET_NAME			:=$(OBJ_DIR)/$(ACS_TARGET)
-CPE_TARGET_NAME			:=$(OBJ_DIR)/$(CPE_TARGET)
+ACS_TARGET_NAME		:=$(OBJ_DIR)/$(ACS_TARGET)
+CPE_TARGET_NAME		:=$(OBJ_DIR)/$(CPE_TARGET)
 #ACS_TARGET_NAME		:=$(ACS_TARGET)
 #CPE_TARGET_NAME		:=$(CPE_TARGET)
 
