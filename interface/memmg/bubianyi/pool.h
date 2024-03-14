@@ -11,7 +11,7 @@
 void *pool_malloc(int size);
 void pool_free(void *header);
 void pool_stat_show(void);
-
+void pool_init(void);
 
 
 

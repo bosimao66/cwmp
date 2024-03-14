@@ -1,4 +1,4 @@
-﻿
+
 
 #注意：COMMON_SRCDIRS 公共目录及其子目录里的.c文件，如果重名，会生成同名.o文件，发生冲突；
 #如果有需要的话，可以优化
@@ -11,6 +11,11 @@ CC					:= $(MKAE_CMP_NAME)gcc
 LD					:= $(MKAE_CMP_NAME)ld 
 OBJCOPY				:= $(MKAE_CMP_NAME)objcopy
 OBJDUMP				:= $(MKAE_CMP_NAME)objdump
+
+#目标
+
+ACS_TARGET			:= acs
+CPE_TARGET			:= cpe
 
 #所有的源文件路径
 
@@ -59,38 +64,72 @@ ACS_CFILES				:= $(foreach dir, $(ACS_SRCDIRS), $(wildcard $(dir)/*.c))
 CPE_CFILES				:= $(foreach dir, $(CPE_SRCDIRS), $(wildcard $(dir)/*.c))
 COMMON_CFILES			:= $(foreach dir, $(COMMON_SRCDIRS), $(wildcard $(dir)/*.c))
 
+#中间的目标文件存放点
+OBJ_DIR					:= object
+ACS_OBJ_DIR				:= $(OBJ_DIR)/acs
+CPE_OBJ_DIR				:= $(OBJ_DIR)/cpe
+COMMON_OBJ_DIR			:= $(OBJ_DIR)
+
+#目标全名
+ACS_TARGET_NAME			:=$(OBJ_DIR)/$(ACS_TARGET)
+CPE_TARGET_NAME			:=$(OBJ_DIR)/$(CPE_TARGET)
+#ACS_TARGET_NAME		:=$(ACS_TARGET)
+#CPE_TARGET_NAME		:=$(CPE_TARGET)
+
+
+
+#函数 notdir ：路径+文件组合，把路径去掉
+#替换方式？test.c 如何变为 test.o，用  test.c:.c=.o ??
+
+ACS_CFILES_NOTDIR		:= $(notdir $(ACS_CFILES))
+ACS_COBJS				:= $(patsubst %, $(ACS_OBJ_DIR)/%, $(ACS_CFILES_NOTDIR:.c=.o))
+CPE_CFILES_NOTDIR		:= $(notdir $(CPE_CFILES))
+CPE_COBJS				:= $(patsubst %, $(CPE_OBJ_DIR)/%, $(CPE_CFILES_NOTDIR:.c=.o))
+COMMON_CFILES_NOTDIR	:= $(notdir $(COMMON_CFILES))
+COMMON_COBJS			:= $(patsubst %, $(COMMON_OBJ_DIR)/%, $(COMMON_CFILES_NOTDIR:.c=.o))
 
 
 #VPATH 声明所有的源文件存在的路径
+
 VPATH				:= $(SRCDIRS)
 
+
 #线程
+
 #PTHREAD				:=-lpthread
 
-#中间的目标文件存放点
-OBJ_DIR					:= object
-
-#目标
-
-ACS_TARGET			:= a
-CPE_TARGET			:= c
 
 #编译
-all:$(OBJ_DIR)/$(ACS_TARGET) $(OBJ_DIR)/$(CPE_TARGET)
-	cp $(OBJ_DIR)/$(ACS_TARGET) ./
-	cp $(OBJ_DIR)/$(CPE_TARGET) ./
+all:$(ACS_TARGET_NAME).out $(CPE_TARGET_NAME).out 
 	@echo ---------------OK!------------------
+	
+$(ACS_TARGET_NAME).out : $(ACS_COBJS) $(COMMON_COBJS)
+	$(CC) -o $@ $^
+	$(CC) -o $(ACS_TARGET_NAME).elf $^ 
+	$(OBJDUMP) -D $(ACS_TARGET_NAME).elf > $(ACS_TARGET_NAME).dis
+	
+$(CPE_TARGET_NAME).out : $(CPE_COBJS) $(COMMON_COBJS)
+	$(CC) -o $@ $^
+	$(CC) -o $(CPE_TARGET_NAME).elf $^ 
+	$(OBJDUMP) -D $(CPE_TARGET_NAME).elf > $(CPE_TARGET_NAME).dis
+	
 
-	
-$(OBJ_DIR)/$(ACS_TARGET) : $(ACS_CFILES) $(COMMON_CFILES)
-	$(CC) -Wall $(INCDIRS_PRO) -o $@ $^ $(PTHREAD)
-	
-$(OBJ_DIR)/$(CPE_TARGET) : $(CPE_CFILES) $(COMMON_CFILES)
-	$(CC) -Wall $(INCDIRS_PRO) -o $@ $^ $(PTHREAD)	
+$(ACS_COBJS) : $(ACS_OBJ_DIR)/%.o : $(ACS_CFILES)
+	@echo -----------acs-----------------
+#	@echo $(ACS_COBJS) --- $(CPE_COBJS)
+	$(CC) -Wall -c $(INCDIRS_PRO) -o $@ $< $(PTHREAD)	
+$(CPE_OBJ_DIR)/%.o : $(CPE_CFILES)
+	@echo -----------cpe-----------------
+	@echo $(ACS_COBJS) --- $(COMMON_CFILES)
+	$(CC) -Wall -c $(INCDIRS_PRO) -o $@ $< $(PTHREAD)
+$(COMMON_OBJ_DIR)/%.o : $(COMMON_CFILES)
+	$(CC) -Wall -c $(INCDIRS_PRO) -o $@ $< $(PTHREAD)	
 
 .PHONY : clean
 clean:
-	rm $(OBJ_DIR)/$(ACS_TARGET) $(OBJ_DIR)/$(CPE_TARGET) $(ACS_TARGET) $(CPE_TARGET) 
+	rm $(ACS_TARGET_NAME).out $(ACS_TARGET_NAME).elf $(ACS_TARGET_NAME).dis 
+	rm $(CPE_TARGET_NAME).out $(CPE_TARGET_NAME).elf $(CPE_TARGET_NAME).dis 
+	rm $(ACS_COBJS) $(CPE_COBJS) $(COMMON_COBJS)
 
 
 

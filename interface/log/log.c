@@ -2,11 +2,8 @@
 
 
 /*
-简介：
-
-
-
-
+备注：
+（1）可以拓展：调试信息打印到控制台，分多个级别，可以给一个变量，用于控制什么级别才可以打印
 */
 
 
@@ -17,6 +14,7 @@
 #include <string.h>
 #include <stdarg.h>     //用于可变参数个数的函数
 
+#include <time.h>
 
 
 
@@ -49,7 +47,7 @@ void log_init(char *home, char *logFile)
     if(logFile != NULL)
         strcpy(logLocalManager.logFileFullName, logFile);
     else    
-        strcpy(logLocalManager.logFileFullName, logFile);
+        strcpy(logLocalManager.logFileFullName, LOG_DEFAULT_LOG_FILE_FULL_NAME);
     int i;
     for(i = 0; i < LOG_LEVEL_END; i++)
         logLocalManager.llo[i] = gLLO[i];
@@ -144,9 +142,18 @@ void log_record(int level, const char *info, const char *fmt, ...)
     va_start(val, fmt);
   
     //获取时间
-    char bufTime[32] = {0};
-    get_time(bufTime);
-
+    char bufTime[64] = {0};
+    time_t current_time;
+    time(&current_time);
+    // 将时间转换为本地时间
+    struct tm *local_time = localtime(&current_time);
+    // 直接输出日期和时间字符串
+    int len = strlen(asctime(local_time));
+    strncpy(bufTime, asctime(local_time), 64);
+    if(len < 64 - 1)
+    bufTime[strlen(asctime(local_time)) - 1] = 0;
+   // printf("======================%s\n", bufTime);
+   
     //简单显示
     if(level == LOG_LEVEL_SHOW_SIMPLE)
         log_write(LOG_LEVEL_SHOW_SIMPLE, logLocalManager.logFileFullName, fmt, val, NULL);    
@@ -174,7 +181,9 @@ void log_record(int level, const char *info, const char *fmt, ...)
 
 void log_test(void)
 {
-    LOG_DEBUG("fasdf %d", 100);
+    log_init(NULL, NULL);
+	LOG_ALARM("this is log alarm!\n");
+    LOG_DEBUG("this is log debug !\n");
 
 }
 
