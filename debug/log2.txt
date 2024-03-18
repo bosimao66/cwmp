@@ -1,0 +1,180 @@
+
+======================log start=======================
+[info 0][Mon Mar 18 19:24:05 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:25:44 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:27:15 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:27:20 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:30:28 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:31:01 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:35:20 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:35:27 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:37:20 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[arlam 0][Mon Mar 18 19:37:58 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:261 
+clinet bind
+
+======================log start=======================
+[info 0][Mon Mar 18 19:38:07 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:41:55 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 19:58:10 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[arlam 0][Mon Mar 18 19:58:52 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:261 
+clinet bind
+
+======================log start=======================
+[info 0][Mon Mar 18 19:58:56 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[arlam 0][Mon Mar 18 19:59:14 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:261 
+clinet bind
+
+======================log start=======================
+[info 0][Mon Mar 18 19:59:19 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:00:24 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:02:55 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[arlam 0][Mon Mar 18 20:03:47 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:261 
+clinet bind
+
+======================log start=======================
+[info 0][Mon Mar 18 20:03:50 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:06:21 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:08:32 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:08:49 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:09:00 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:14:00 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:14:05 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:24:22 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:24:32 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:29:35 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:29:51 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:32:34 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:35:35 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:35:59 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[arlam 0][Mon Mar 18 20:38:00 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:266 
+clinet connect
+
+======================log start=======================
+[arlam 0][Mon Mar 18 20:38:06 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:266 
+clinet connect
+
+======================log start=======================
+[arlam 0][Mon Mar 18 20:38:17 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:266 
+clinet connect
+
+======================log start=======================
+[arlam 0][Mon Mar 18 20:38:34 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:266 
+clinet connect
+
+======================log start=======================
+[info 0][Mon Mar 18 20:39:50 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:39:57 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:42:31 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:44:21 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:49:05 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:50:07 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK
+
+======================log start=======================
+[info 0][Mon Mar 18 20:51:00 2024]file:protocol/transport/tcp.c  fun:tcp_client_start  line:269 
+connect to [192.168.100.220:8080] OK

@@ -315,7 +315,9 @@ void pool_test()
     ptr = pool_user_malloc(id, 1024 * 200);
     ptr2 = pool_user_malloc(id, 421);
 
-     pool_show();
+    pool_user_free(ptr);
+    pool_user_free(ptr2);
+    pool_show();
 }
 
 

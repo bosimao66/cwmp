@@ -1,385 +1,160 @@
-﻿
-======================log start=======================
-this is log show!
 
 ======================log start=======================
-this is log show!
-
-======================log start=======================
-this is log show!
-
-======================log start=======================
-this is log show!
-
-======================log start=======================
-this is log show!
-
-======================log start=======================
-this is log show!
-
-======================log start=======================
-this is log show!
-
-======================log start=======================
-this is log show!
-
-======================log start=======================
-this is log show!
-
-======================log start=======================
-[info 0][Mon Jul 19 03:43:59 1875
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[info 0][Sat Dec 30 23:59:59 1899
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Thu Jan  1 08:00:00 1970
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Thu Jan  1 08:00:00 1970
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Thu Jan  1 08:00:00 1970
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Thu Jan  1 08:00:00 1970
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Thu Jan  1 08:00:00 1970
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:10:08 2024
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:10:25 2024
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:12:07 2024
---]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:13:50 2024
---]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:16:05 2024
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:16:21 2024
- pppppp]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:16:45 2024
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:18:18 2024
-]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:18:30 2024]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:20:01 2024]file:acs/main.c  fun:main  line:20 
-	this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:23:46 2024]file:acs/main.c  fun:main  line:20 
------this is log show!
-
-
-======================log start=======================
-[debug 0][Wed Mar 13 23:24:07 2024]file:acs/main.c  fun:main  line:20 
-this is log show!
-
-
-======================log start=======================
-[arlam 0][Wed Mar 13 23:25:03 2024]file:acs/main.c  fun:main  line:20 
+[arlam 0][Mon Mar 18 20:42:26 2024]file:interface/log/log.c  fun:log_test  line:185 
 this is log alarm!
 
-[debug 0][Wed Mar 13 23:25:03 2024]file:acs/main.c  fun:main  line:22 
+[debug 0][Mon Mar 18 20:42:26 2024]file:interface/log/log.c  fun:log_test  line:186 
 this is log debug !
 
+[arlam 2][Mon Mar 18 20:42:26 2024]file:protocol/transport/tcp.c  fun:tcp_server_start  line:230 
+bind
 
 ======================log start=======================
-[arlam 0][Wed Mar 13 23:28:18 2024]file:acs/main.c  fun:main  line:20 
+[arlam 0][Mon Mar 18 20:44:13 2024]file:interface/log/log.c  fun:log_test  line:185 
 this is log alarm!
 
-[debug 0][Wed Mar 13 23:28:18 2024]file:acs/main.c  fun:main  line:21 
+[debug 0][Mon Mar 18 20:44:13 2024]file:interface/log/log.c  fun:log_test  line:186 
 this is log debug !
 
+[info 0][Mon Mar 18 20:44:24 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
+[info 2][Mon Mar 18 20:44:30 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
+[info 4][Mon Mar 18 20:44:36 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
+[info 6][Mon Mar 18 20:44:42 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
+[info 8][Mon Mar 18 20:44:48 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
+[info 10][Mon Mar 18 20:44:54 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
+[info 12][Mon Mar 18 20:45:00 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
 
 ======================log start=======================
-[arlam 0][Wed Mar 13 23:28:51 2024]file:acs/main.c  fun:main  line:20 
+[arlam 0][Mon Mar 18 20:49:02 2024]file:interface/log/log.c  fun:log_test  line:185 
 this is log alarm!
 
-[debug 0][Wed Mar 13 23:28:51 2024]file:acs/main.c  fun:main  line:21 
+[debug 0][Mon Mar 18 20:49:02 2024]file:interface/log/log.c  fun:log_test  line:186 
 this is log debug !
 
+[info 0][Mon Mar 18 20:49:08 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
+[info 2][Mon Mar 18 20:49:14 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
+[info 4][Mon Mar 18 20:49:20 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
+[info 6][Mon Mar 18 20:49:26 2024]file:protocol/transport/tcp.c  fun:tcp_test  line:375 
+=====================i=0 len=25====================
 
 ======================log start=======================
-[arlam 0][Wed Mar 13 23:32:29 2024]file:acs/main.c  fun:main  line:20 
+[arlam 0][Mon Mar 18 20:50:04 2024]file:interface/log/log.c  fun:log_test  line:185 
 this is log alarm!
 
-[debug 0][Wed Mar 13 23:32:29 2024]file:acs/main.c  fun:main  line:21 
+[debug 0][Mon Mar 18 20:50:04 2024]file:interface/log/log.c  fun:log_test  line:186 
 this is log debug !
 
-
-======================log start=======================
-[arlam 0][Thu Mar 14 15:57:21 2024]file:acs/main.c  fun:main  line:19 
-this is log alarm!
-
-[debug 0][Thu Mar 14 15:57:21 2024]file:acs/main.c  fun:main  line:20 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:02:30 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:02:30 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:05:23 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:05:23 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:07:49 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:07:49 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:10:01 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:10:01 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:16:03 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:16:03 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:16:46 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:16:46 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:17:20 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:17:20 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:17:54 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:17:54 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:24:25 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:24:25 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:32:40 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:32:40 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:35:28 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:35:28 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:36:19 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:36:19 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:37:24 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:37:24 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:39:39 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:39:39 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:41:31 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:41:31 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:42:38 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:42:38 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:45:10 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:45:10 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:45:47 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:45:47 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:46:03 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:46:03 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:48:58 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:48:58 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:50:07 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:50:07 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:50:39 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:50:39 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:52:37 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:52:37 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:54:12 2024]file:acs/main.c  fun:main  line:20 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:54:12 2024]file:acs/main.c  fun:main  line:21 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:56:05 2024]file:interface/log/log.c  fun:log_test  line:185 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:56:05 2024]file:interface/log/log.c  fun:log_test  line:186 
-this is log debug !
-
-
-======================log start=======================
-[arlam 0][Thu Mar 14 16:58:19 2024]file:interface/log/log.c  fun:log_test  line:185 
-this is log alarm!
-
-[debug 0][Thu Mar 14 16:58:19 2024]file:interface/log/log.c  fun:log_test  line:186 
-this is log debug !
-
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this msg form is client 
+-----------------------i=0 [192.168.100.220-8081]msg 23byte--------------------
+[192.168.100.220:8081]! 
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=1 [192.168.100.220-8082]msg 24byte--------------------
+this msg form is client 
+-----------------------i=1 [192.168.100.220-8082]msg 23byte--------------------
+[192.168.100.220:8082]! 
+-----------------------i=1 [192.168.100.220-8082]msg 24byte--------------------
+this is second msg……
+-----------------------i=1 [192.168.100.220-8082]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=1 [192.168.100.220-8082]msg 24byte--------------------
+this is second msg……
+-----------------------i=1 [192.168.100.220-8082]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……
+-----------------------i=1 [192.168.100.220-8082]msg 24byte--------------------
+this is second msg……
+-----------------------i=1 [192.168.100.220-8082]msg 1byte--------------------
+!his is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 24byte--------------------
+this is second msg……
+-----------------------i=0 [192.168.100.220-8081]msg 1byte--------------------
+!his is second msg……

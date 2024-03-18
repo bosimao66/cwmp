@@ -23,8 +23,8 @@ typedef struct __cmd_obj_mg{
 
 
 
-static cmd_obj_t cmd_obj_array[CMD_OBJ_MAX_NUM] = {0};
-cmd_obj_mg_t cmd_obj_mg = {0};
+//static cmd_obj_t cmd_obj_array[CMD_OBJ_MAX_NUM] = {0};
+//cmd_obj_mg_t cmd_obj_mg = {0};
 
 
 
